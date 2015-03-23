@@ -1,0 +1,258 @@
+body {
+  background-color: #444;
+  background-image: url('../img/street_bg.png');
+  z-index: 1;
+  font-family: Helvetica, sans-serif;
+  color: #222;
+  line-height: 130%;
+}
+
+h1, h2, h3 {
+  font-family: 'Allerta Stencil', sans-serif;
+  color: #000;
+  padding: 10px 0;
+}
+h1 {font-size: 24px;}
+h2 {font-size: 20px;}
+p {
+  margin: 10px 0px;
+}
+em {
+  font-style: italic;
+}
+.float_right{
+  float:right;
+}
+a {
+  color: #118;
+}
+a:hover {
+  color:; #11A;
+}
+#main_container, .container {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  background-color: rgba(255,255,255,.7);
+  position: relative;
+  display: block;
+  -moz-box-shadow:    0px 0px 30px 0px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,.3);
+  box-shadow:         0px 0px 30px 0px rgba(0,0,0,.3);
+}
+.clear {
+  clear:both;
+}
+.row {
+  padding: 15px 25px;
+  position: relative;
+  display: block;
+}
+.row.home {
+  width: 500px;
+}
+.half_row {
+  display: inline-block;
+  width: 40%;
+  padding: 15px 20px;
+}
+.half_row.left{
+  padding-left: 30px;
+}
+.half_row.right{
+  padding-right: 30px;
+}
+
+
+/*/////////////// HEADER //////////////////*/
+
+div.header {
+  position: static;
+  display: block;
+  height: 370px;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+div.header_content {
+  z-index: 2;
+  height: 330px;
+}
+.top_logo {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  z-index: 2;
+}
+.bts_logo {
+  width: 200px; 
+  z-index: 2;
+}
+div.logo_string {
+  position: absolute;
+  display: block;
+/*  top: 30px;
+  left: 170px;*/
+  top: 150px;
+  left: 40px;
+  text-shadow: 0 0 30px #eef;
+  vertical-align: top;
+  text-align: left;
+  z-index: 2;
+  font-size: 26px;
+}
+div.slogan {
+  position: absolute;
+  display: none;
+  top: 230px;
+  left: 140px;
+  z-index: 2;
+  color: #ccc;
+  margin: 0 auto;
+  text-align: center;
+}
+.header_image_container, .header_image{
+  position: absolute;
+  margin-top: -20px;
+  display: block;
+  min-height: 390px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  overflow-y: hidden;
+}
+.header_image_container .header_wrestlers {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 50px;
+  width: 500px;
+  z-index: 2;
+}
+
+
+
+/*//////////// MAIN NAV  //////////////// */
+
+
+#main_nav {
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: 3;
+}
+#main_nav li {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  background: rgba(0,0,0,.3);
+  margin: 0 -4px 0 0;
+}
+#main_nav li.active {
+  background: rgba(160,100,0,.4);
+}
+#main_nav li a, #main_nav li.active a:hover {
+  color: #eee;
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  line-height: 37px;
+  cursor: default;
+  background: none;
+}
+#main_nav a:hover {
+  background: #555;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/*//////////// CONTENT  //////////////// */
+
+
+#content {
+  position: static;
+  display: block;
+}
+a.donate_img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 200;
+  width: 120px;
+  height: 120px;
+}
+a.donate_img img {
+  width: 120px;
+  height: 120px;
+}
+#content.home {
+  height: 730px;
+}
+.home.gray_bg {
+  background: #ddd;
+  border-bottom: 1px solid #ccc;
+}
+.row.motto .motto {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-style: italic;
+  padding: 10px 0 10px 30px;
+  color: #000;
+  border-left: 10px solid #ccc;
+}
+.home_images {
+  position: absolute;
+  right: 0;
+  top: 370px;
+  width: 360px;
+  height: 700px;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.home_images img{
+  width: 340px;
+  margin: 0px 0;
+  float: right;
+    -webkit-box-shadow: -2px 2px 3px #333;
+     -moz-box-shadow: -2px 2px 3px #333;
+          box-shadow: -2px 2px 3px  #333;
+}
+
+.video.row .intro_video {
+  float: right;
+  right: 0; 
+}
+.video.row .intro_video, .video.row iframe {
+  height: 330px;
+  width: 400px;
+  margin: 10px 30px 20px 20px;
+}
+div.donate {
+  float: right;
+  margin: 0 40px 30px 30px;
+}
+.location_blurb {
+  margin: 20px 40px 20px 0px;
+}
+.locations iframe {
+  border: 1px solid #999;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+
+
+
+/*////////////// FOOTER ////////////// */
+
+footer {
+  font-size: 12px;
+  height: 40px;
+  width: 900px;
+  margin: 0px auto 20px auto;
+  line-height: 25px;
+  color: #555;
+}
